@@ -374,165 +374,119 @@
   </script>
 
 <!-- End paper abstract -->
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+  <section class="section">
+    <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="column is-six-fifths">
+          <h2 class="title is-3">Key Insights and Figures</h2>
+        </div>
+      </div>
+
+      <!-- Row of figures -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div class="content has-text-justified">
+
+              <div style="
+              display: flex; 
+              flex-wrap: wrap; 
+              justify-content: center; 
+              align-items: center; 
+              gap: 20px;">
+
+              <!-- First Figure -->
+              <figure style="
+                flex: 1 1 600px; 
+                max-width: 100%; 
+                min-width: 250px; 
+                margin: 0; 
+                text-align: center;">
+                <img src="static/images/motivation_study.png" 
+                     alt="Causal-Adapter Fig" 
+                     style="width: 100%; vertical-align: middle;">
+                <figcaption>
+                  <small>
+                    <em>Figure 1. Motivational study: (a) Current T2I models often overlook continuous attributes, limiting fine-grained edits. (b) Existing T2I methods suffer from attribute entanglement. (c) Cross-attention maps: base vs. regularized Causal-Adapter.
+                  </small>
+                </figcaption>
+              </figure>
+              
+              
+            </div>
+            
+
+            <div style="
+              display: flex; 
+              flex-wrap: wrap; 
+              justify-content: center; 
+              align-items: center; 
+              gap: 20px;">
+              
+              <!-- First Figure -->
+              <figure style="
+                flex: 1 1 600px; 
+                max-width: 100%; 
+                min-width: 250px; 
+                margin: 0; 
+                text-align: center;">
+                <img src="static/images/sketch_comparison.png" 
+                     alt="Causal-Adapter Fig" 
+                     style="width: 100%; vertical-align: middle;">
+                <figcaption>
+                  <small>
+                    <em>Figure 2. A sketch comparison of counterfactual image generation methods based on: (a) VAE or GAN (b) Diffusion SCM and (c) Diffusion autoencoder (d) T2I based editing (e) Vanilla Causal-Adapter (f) Causal-Adapter with attribute regularization
+                  </small>
+                </figcaption>
+              </figure>
+
+
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
 
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
     </div>
   </section>
-<!--End paper poster -->
 
 
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
+    <!-- ===== Additional / Detailed Methods Section ===== -->
+  <section class="section" id="method" style="background-color:#efeff081">
     <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
-      </div>
-      <pre id="bibtex-code"><code>@article{tong2025causal,
-  title={Causal-Adapter: Taming Text-to-Image Diffusion for Faithful Counterfactual Generation},
-  author={Tong, Lei and Liu, Zhihua and Lu, Chaochao and Oglic, Dino and Diethe, Tom and Teare, Philip and Tsaftaris, Sotirios A and Jin, Chen},
-  journal={arXiv preprint arXiv:2509.24798},
-  year={2025}
-}</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
+      <h2 class="title is-3">Method</h2>
 
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+      <!-- Code snippet or pseudo-code from your LaTeX -->
+      <div class="card mb-3">
+        <div class="card-body" style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between;">
+          <div style="flex:1; min-width:300px; margin-right:1rem;">
+            <img src="static/images/framework.png" alt="fig 3" style="max-width:100%;">
+          </div>
         </div>
       </div>
+
+      <p>
+        We propose <strong>Causal-Adapter</strong>, a simple yet module that plugs into a pretrained text-to-image diffusion model to generate faithful counterfactual images. 
+        Given an input image and an intervention specified by a causal graph and semantic attributes, Causal-Adapter injects causal signals into the text conditioning (via <strong>prompt-aligned injection</strong>) 
+        and is trained with reconstruction and <strong>contrastive objectives</strong> to disentangle attributes and reduce spurious correlations. 
+        At inference, intervened attributes update the conditioning to produce counterfactuals, 
+        with optional attention guidance for localized edits while preserving non-intervened identity cues.
+      </p>
     </div>
-  </div>
-</footer>
+  </section>
+
+
+
+<!-- ===== Footer Section (Optional) ===== -->
+  <footer class="footer has-text-centered" style="padding:2rem 10.5rem;">
+    <div class="content">
+      <p>
+        <strong>Causal-Adapter</strong> by <a href="https://leitong02.github.io/" target="_blank">Lei Tong</a> @ <a href="https://github.com/AstraZeneca" target="_blank">
+            Centre for AI, Data Science & Artificial Intelligence, BioPharmaceuticals R&D, AstraZeneca, Cambridge, UK</a>.
+        </p>
+        <p>
+        Built upon open-source code from the broader academic community.
+      </p>
+    </div>
+  </footer>
+
 
 <!-- Statcounter tracking code -->
   
